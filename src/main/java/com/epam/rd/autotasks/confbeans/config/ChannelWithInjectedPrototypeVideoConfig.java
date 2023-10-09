@@ -21,7 +21,7 @@ public class ChannelWithInjectedPrototypeVideoConfig {
     VideoStudioImpl videoStudio = new VideoStudioImpl("Cat Failure Compilation", 7,
             LocalDateTime.of(2001, 10, 18, 10, 0), Period.ofDays(1));
 
-    //TODO configure a channel bean with a prototype scoped video bean
+    //configure a channel bean with a prototype scoped video bean
     @Bean
     @Scope("prototype")
     public Video video() {
